@@ -19,6 +19,7 @@ export function FrontendStack({ stack, app }) {
       REACT_APP_USER_POOL_ID: auth.userPoolId,
       REACT_APP_IDENTITY_POOL_ID: auth.cognitoIdentityPoolId,
       REACT_APP_USER_POOL_CLIENT_ID: auth.userPoolClientId,
+      REACT_APP_STRIPE_SECRET_KEY: process.env.REACT_APP_STRIPE_SECRET_KEY,
     },
   });
 
