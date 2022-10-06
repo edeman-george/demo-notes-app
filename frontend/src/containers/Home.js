@@ -48,7 +48,8 @@ export default function Home() {
           <LinkContainer key={noteId} to={`/notes/${noteId}`}>
             <ListGroup.Item action>
               <span className="font-weight-bold">
-                {content.trim().split("\n")[0]}
+                {console.log(content)}
+                {content?.trim().split("\n")[0]}
               </span>
               <br />
               <span className="text-muted">
